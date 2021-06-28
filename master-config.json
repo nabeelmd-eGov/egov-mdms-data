@@ -150,31 +150,12 @@
       ]
     },
     "DocumentType": {
-      "masterName": "DocumentType",
+      "masterName": "StructureType",
       "moduleDefinition": null,
       "isStateLevel": true,
       "uniqueKeys": [
         "$.code"
       ]
-    }
-  },
-  "DIGIT-UI": {
-    "ApiCachingSettings": {
-      "masterName": "ApiCachingSettings",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    },
-    "RoleActionMetadata": {
-      "masterName": "RoleActionMetadata",
-      "moduleDefinition": null,
-      "isStateLevel": true,
-      "uniqueKeys": []
-    },
-    "RoleStatusMapping": {
-      "masterName": "RoleStatusMapping",
-      "moduleDefinition": null,
-      "isStateLevel": true,
-      "uniqueKeys": []
     }
   },
   "egf-master": {
@@ -391,6 +372,67 @@
       ]
     }
   },
+  "BPA": {
+    "ServiceType": {
+      "masterName": "ServiceType",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "ApplicationType": {
+      "masterName": "ApplicationType",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "DocTypeMapping": {
+      "masterName": "DocTypeMapping",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "CalculationType": {
+      "masterName": "CalculationType",
+      "isStateLevel": true,
+      "uniqueKeys": []
+    },
+    "RiskTypeComputation": {
+      "masterName": "RiskTypeComputation",
+      "isStateLevel": true,
+      "uniqueKeys": []
+    },
+    "OccupancyType": {
+      "masterName": "OccupancyType",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "SubOccupancyType": {
+      "masterName": "SubOccupancyType",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "Usages": {
+      "masterName": "Usages",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.code"
+      ]
+    },
+    "CheckList": {
+      "masterName": "CheckList",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.question"
+      ]
+    }
+  },
   "inventory": {
     "Material": {
       "masterName": "Material",
@@ -422,14 +464,6 @@
     },
     "citymodule": {
       "masterName": "citymodule",
-      "isStateLevel": true,
-      "moduleDefinition": null,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "footer": {
-      "masterName": "footer",
       "isStateLevel": true,
       "moduleDefinition": null,
       "uniqueKeys": [
@@ -508,6 +542,20 @@
       "isStateLevel": true,
       "uniqueKeys": [
         "$.code"
+      ]
+    },
+    "MutationRebate": {
+      "masterName": "MutationRebate",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.fromFY"
+      ]
+    },
+    "MutationPenalty": {
+      "masterName": "MutationPenalty",
+      "isStateLevel": true,
+      "uniqueKeys": [
+        "$.fromFY"
       ]
     },
     "ConstructionType": {
@@ -636,20 +684,6 @@
     },
     "Penalty": {
       "masterName": "Penalty",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.fromFY"
-      ]
-    },
-    "MutationRebate": {
-      "masterName": "MutationRebate",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.fromFY"
-      ]
-    },
-    "MutationPenalty": {
-      "masterName": "MutationPenalty",
       "isStateLevel": true,
       "uniqueKeys": [
         "$.fromFY"
@@ -969,98 +1003,6 @@
       "masterName": "CalculationAttribute",
       "isStateLevel": true,
       "uniqueKeys": []
-    },
-    "dateEffectiveConfig": {
-      "masterName": "dateEffectiveConfig",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    }
-  },
-  "BPA": {
-    "ServiceType": {
-      "masterName": "ServiceType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "ApplicationType": {
-      "masterName": "ApplicationType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "DocTypeMapping": {
-      "masterName": "DocTypeMapping",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "CalculationType": {
-      "masterName": "CalculationType",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    },
-    "RiskTypeComputation": {
-      "masterName": "RiskTypeComputation",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    },
-    "OccupancyType": {
-      "masterName": "OccupancyType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "SubOccupancyType": {
-      "masterName": "SubOccupancyType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "Usages": {
-      "masterName": "Usages",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "CheckList": {
-      "masterName": "CheckList",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.question"
-      ]
-    },
-    "DeviationParams": {
-      "masterName": "DeviationParams",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.parameter"
-      ]
-    },
-    "NocTypeMapping": {
-      "masterName": "NocTypeMapping",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    }
-  },
-  "NOC": {
-    "DocumentTypeMapping": {
-      "masterName": "DocumentTypeMapping",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    },
-    "NocType": {
-      "masterName": "NocType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
     }
   },
   "sw-services-calculation": {
@@ -1136,115 +1078,6 @@
       "masterName": "CalculationAttribute",
       "isStateLevel": true,
       "uniqueKeys": []
-    },
-    "dateEffectiveConfig": {
-      "masterName": "dateEffectiveConfig",
-      "isStateLevel": true,
-      "uniqueKeys": []
-    }
-  },
-  "Chatbot": {
-    "KeyWords": {
-      "masterName": "KeyWords",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    }
-  },
-  "FSM": {
-    "ApplicationChannel": {
-      "masterName": "ApplicationChannel",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "SanitationType": {
-      "masterName": "SanitationType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "CheckList": {
-      "masterName": "CheckList",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "Config": {
-      "masterName": "Config",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "FSTPPlantInfo": {
-      "masterName": "FSTPPlantInfo",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "PitType": {
-      "masterName": "PitType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "PropertyType": {
-      "masterName": "PropertyType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "CancelReason": {
-      "masterName": "CancelReason",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "DeclineReason": {
-      "masterName": "DeclineReason",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "ReassignReason": {
-      "masterName": "ReassignReason",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "RejectionReason": {
-      "masterName": "RejectionReason",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    }
-  },
-  "Vehicle": {
-    "SuctionType": {
-      "masterName": "SuctionType",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
-    },
-    "VehicleMakeModel": {
-      "masterName": "VehicleMakeModel",
-      "isStateLevel": true,
-      "uniqueKeys": [
-        "$.code"
-      ]
     }
   }
 }
